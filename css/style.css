@@ -1,0 +1,33 @@
+
+.switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height:35px;
+  }
+  .switch input {
+    opacity: 0;
+  }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    inset: 0;
+    background:#d10c0c;
+    border-radius: 50px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 24px;
+    width: 23px;
+    left:5px;
+    bottom:5px;
+    background-color: white;
+    border-radius: 50px;
+    transition: 0.9s;
+  }
+  .switch input:checked + .slider:before {
+    transform: translateX(1.6em);
+  }
